@@ -107,6 +107,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <button id="highlightbtn">Highlight del siguiente bloque -&gt;</button>
       <input type="text" id="highlighttxt" value='Id del bloque (ver xml)'></input>
       <button id="errorbtn">&lt;- Error del bloque anterior</button>
+      <button id="changeLang">&lt;Cambiar Idioma</button>
     </p>
     <gs-element-blockly media="../../blockly-package/media/">
     </gs-element-blockly>
@@ -124,6 +125,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <pre id="divValidIds"></pre>
     <script>
       var blocklyElement = document.querySelector('gs-element-blockly');
+      var lang = 'en';
+
+      document.querySelector('#changeLang').addEventListener('click', function() {
+        lang = lang == 'en' ? 'es' : 'en';
+        blocklyElement.setLanguage(lang);
+      });
 
       document.querySelector('#generatebtn').addEventListener('click', function() {
         document.getElementById("code").innerHTML = blocklyElement.generateCode({withRegions: document.getElementById("withRegions").checked});
