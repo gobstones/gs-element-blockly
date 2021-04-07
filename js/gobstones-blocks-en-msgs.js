@@ -5,10 +5,10 @@ Blockly.translations.enMsgs = {
 // Commands
 // ========
     // Builtin
-    'GBS_DROP_MSG': '%1 Grab %2',
-    'GBS_DROP_TOOLTIP': 'Grab a stone of the given color from the current cell.',
-    'GBS_GRAB_MSG': '%1 Drop %2',
-    'GBS_GRAB_TOOLTIP': 'Drop a stone of the given color in the current cell.',
+    'GBS_DROP_MSG': '%1 Drop %2',
+    'GBS_DROP_TOOLTIP': 'Drop a stone of the given color in the current cell.',
+    'GBS_GRAB_MSG': '%1 Grab %2',
+    'GBS_GRAB_TOOLTIP': 'Grab a stone of the given color from the current cell.',
     'GBS_MOVE_MSG': '%1 Move %2',
     'GBS_MOVE_TOOLTIP': 'Move the head one cell to the given direction.',
     'GBS_MOVETOEDGE_MSG': '%1 Move to edge %2',

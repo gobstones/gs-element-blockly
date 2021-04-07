@@ -760,7 +760,7 @@ Blockly.Blocks.Poner = {
     const icon = "putStone.png";
 
     this.jsonInit({
-      message0: '%{BKY_GBS_GRAB_MSG}',
+      message0: '%{BKY_GBS_DROP_MSG}',
       type: "Statement",
       previousStatement: "Statement",
       nextStatement: "Statement",
@@ -777,7 +777,7 @@ Blockly.Blocks.Poner = {
         }
       ],
       colour: Blockly.CUSTOM_COLORS.Poner || Blockly.CUSTOM_COLORS.primitiveCommand,
-      tooltip: '%{BKY_GBS_GRAB_TOOLTIP}',
+      tooltip: '%{BKY_GBS_DROP_TOOLTIP}',
       inputsInline: true
     });
   }
@@ -791,7 +791,7 @@ Blockly.Blocks.Sacar = {
       type: "Statement",
       previousStatement: "Statement",
       nextStatement: "Statement",
-      message0: '%{BKY_GBS_DROP_MSG}',
+      message0: '%{BKY_GBS_GRAB_MSG}',
       args0: [
         {
           "type": "field_image",
@@ -805,7 +805,7 @@ Blockly.Blocks.Sacar = {
         }
       ],
       colour: Blockly.CUSTOM_COLORS.Sacar || Blockly.CUSTOM_COLORS.primitiveCommand,
-      tooltip: '%{BKY_GBS_DROP_TOOLTIP}',
+      tooltip: '%{BKY_GBS_GRAB_TOOLTIP}',
       inputsInline: true
     });
   }
